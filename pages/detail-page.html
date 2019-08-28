@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" media="screen" href="details-page.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="detail-page.css">
             <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+            <script src="detail-page.js"></script>
             <h1>Niru Mobile Mueseum App</h1>
     </head>
     <body>
@@ -13,14 +14,11 @@
             </section>
             <section id="comments">
                 <h2>Comments</h2>
-                <section class="comment">
-                    <p> This is a very colorful art</p>
-                </section>
             </section>
             <form onsubmit="submitComment(); return false">
                 <div class="formSelection">
                     <label for="name">Name:</label>
-                    <imput type="text" id="name"></imput>
+                    <input type="text" id="name"></imput>
                 </div>
                 <div class="formSelection">
                     <label for="msg">Message:</label>

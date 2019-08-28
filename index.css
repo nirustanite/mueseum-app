@@ -25,25 +25,45 @@ h1{
     margin: 1rem;
 }
 
-#gallery {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-items: flex-start;
+
+@media (max-width: 800px){
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
 
-@media (max-width: 599px){
-    
-}
+@media (max-width: 1400px){
 
-@media (max-width: 1200px){
+    .artObject {
+        margin: 1rem;
+        justify-content: center;
+    }
 
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 1800px){
-
+    .gallery {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 @media (min-width: 1800px){
-    
+    .gallery {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
