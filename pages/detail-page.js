@@ -1,7 +1,14 @@
 
 function doesNotPassAllValidations(name, msg){
-    if(!name || !msg){
+
+   if(!name || !msg){
         alert("You haven't entered a name or message");
+        return true;
+    }
+
+    if((name && !msg) || (!name && msg)
+    {
+        alert("You haven't entered in one of the field");
         return true;
     }
 
@@ -26,7 +33,7 @@ function submitComment()
     if(doesNotPassAllValidations(name,msg)){
         return null;
     }
-    
+
     const comment = document.createElement('section');
     const h3 = document.createElement('h3');
     const p = document.createElement('p');
