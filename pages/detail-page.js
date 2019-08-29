@@ -20,9 +20,6 @@ function doesNotPassAllValidations(name, msg){
 }
 
 
-
-
-
 function submitComment()
 {
     const inputField = document.getElementById('name');

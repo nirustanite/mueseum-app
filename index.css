@@ -26,44 +26,39 @@ h1{
 }
 
 
-@media (max-width: 800px){
-    .gallery {
+.gallery {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
-}
 
-@media (max-width: 1400px){
+
+
+/*media queries*/
+@media (min-width: 1100px) {
+    #gallery > *:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 
     .artObject {
         margin: 1rem;
         justify-content: center;
     }
 
-    .gallery {
+    .display {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-    }
-}
-
-@media (max-width: 1800px){
-    .gallery {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: flex-end;
     }
 }
 
 @media (min-width: 1800px){
-    .gallery {
+    .display {
         display: flex;
         flex-flow: wrap;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 }
